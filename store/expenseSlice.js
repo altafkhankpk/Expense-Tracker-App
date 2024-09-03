@@ -28,7 +28,7 @@ const expenseSlice = createSlice({
         state.balance-=trans.amount
       }
       else{
-        state.expense-=trans.amount
+        state.expense+=trans.amount
         state.balance-=trans.amount
       }
       state.transactions.splice(action.payload,1)
